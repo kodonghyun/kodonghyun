@@ -1,3 +1,413 @@
-.red {
-  color: red;
+
+/* 모바일용 CSS */
+/* 기본 CSS */
+html {
+  font-family: 'NanumGothic'
+}
+
+#wrap {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.empty-text {
+  font-size: 0;
+}
+
+#wrap section {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: #2ecc71;
+}
+
+.slogan-title {
+  color: white;
+  text-align: center;
+  padding: 8px 0 3px 0;
+}
+.slogan {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.main-info {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.profile {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 20px 0;
+}
+.profile-image {
+  width: 100px;
+  border: 1px solid #444;
+  border-radius: 50%;
+}
+.simple-info {
+  flex: 1 1 0;
+  text-align: center;
+}
+.simple-info h3 {
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+}
+.simple-info-table {
+  border-collapse: collapse;
+  display: inline;
+  text-align: center;
+}
+.simple-info-table td {
+  padding: 3px;
+  border: 1px solid #EEE;
+}
+.simple-info p {
+}
+
+.like-info {
+  background: honeydew;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+}
+.like-info h4 {
+  padding: 0 0 8px 0;
+}
+.like-info p {
+  font-size: 0.9rem;
+}
+.interest-info {
+  background: honeydew;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+}
+.interest-info h4 {
+  padding: 0 0 8px 0;
+}
+.interest-info p {
+  font-size: 0.9rem;
+}
+
+.movie-info {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.movie-info h4 {
+  text-align: center;
+  padding: 15px 0 20px 0;
+}
+.movie-info-div {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: row nowrap;
+}
+
+.main-movie-info {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.main-movie-background {
+  position: relative;
+}
+.main-movie-poster {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 6px;
+  border: 0.5px solid #e5cb06;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  /*background-image: url('/image/logan.jpg');*/
+}
+.main-movie-poster:hover + .main-movie-oneline-memo {
+    display: block;
+}
+.main-movie-oneline-memo {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  /*display: none;*/
+}
+.main-movie-oneline-memo:hover {
+    display: block;
+}
+.movie-list {
+  flex: 1 1 0;
+  text-align: center;
+}
+.movie-list img {
+  padding: 3px;
+  width: 40%;
+  border: 0.5px solid #CCC;
+}
+.movie-info p {
+  font-size: 0.9rem;
+}
+
+
+.develop-info {
+  background: lightcyan;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+.develop-info h4 {
+  padding-bottom: 8px;
+}
+.develop-info li {
+  font-size: 0.9rem;
+  line-height: 18px;
+}
+.language-info {
+  width: 100%;
+  text-align: center;
+}
+.language-info h4 {
+  padding: 8px 0;
+}
+/*.language-info p {*/
+/*  font-size: 0.9rem;*/
+/*}*/
+
+.language-list-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.language-list-parent .language-list-child {
+  display: flex;
+  align-items: center;
+}
+
+.language-list-child {
+  
+  width: 25%;
+}
+.language-list-child img {
+  padding: 10px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.dream-info {
+  background: #4286f4;
+  width: 100%;
+  padding: 10px 0;
+}
+.dream-info p {
+  color: white;
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 1rem;
+}
+.dream-info h4 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* 푸터 영역 CSS */
+.footer {
+  text-align: center;
+  width: 100%;
+  background: #474747;
+}
+
+.footer p {
+  padding: 20px;
+  padding: 1.250rem;
+  font-size: 0.813em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 1px 1px #191919;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+  /* 기본 CSS */
+  #wrap {
+    flex-flow: row wrap;
+  }
+  
+  .header {
+    width: 100%;
+  }
+  
+  .main-info {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+  }
+  
+  .profile {
+    flex: 1 1 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .profile-image {
+    width: 100px;
+    border-radius: 100%;
+  }
+  .simple-info {
+    flex: 1 1 0;
+  }
+  .simple-info p {
+  }
+  .simple-info-table td:nth-child(2) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .package-info {
+    width: 100%;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+  }
+  .like-info {
+    width: 50%;
+  }
+  
+  .interest-info {
+    width: 50%;
+  }
+  
+  .movie-info {
+    width: 100%;
+  }
+  
+  .develop-info {
+    width: 100%;
+  }
+  
+  .language-info {
+    width: 100%;
+  }
+  
+  .dream-info {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
+  
+  .language-list-child {
+    width: 16%;
+  }
+  .language-list-child img {
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+  }
+  /* 푸터 영역 CSS */
+  .footer p {
+    padding: 40px 0;
+    padding: 2.500rem 0;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width:960px){
+  /* 기본 CSS */
+  #wrap {
+    position: relative;
+    width: 90%;
+  }
+  
+  .main-info {
+    padding: 20px 0 20px 0;
+    background: honeydew;
+    width: 50%;
+    flex-flow: row wrap;
+  }
+    
+  .simple-info-table {
+    border-collapse: collapse;
+    display: inline;
+    text-align: center;
+  }
+  .simple-info-table td {
+    border: 1px solid #DDD;
+  }
+  .package-info {
+    padding: 20px 0 20px 0;
+    background: honeydew;
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  .like-info {
+    width: 100%;
+  }
+  .interest-info {
+    width: 100%;
+  }
+  
+  .develop-info {
+    padding: 20px 0 20px 0;
+    width: 100%;
+  }
+  .language-list-child {
+    width: 8%;
+  }
+  .language-list-child img {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .dream-info {
+    padding: 20px 0 20px 0;
+  }
+  .dream-info p {
+    font-size: 1.3rem;
+  }
+  
+  .footer p {
+    padding-left: 3.125%;
+    /* 30px ÷ 960px */
+  }
 }
